@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI App</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 50px;
+    background-image: linear-gradient(to bottom right, red, rgb(255, 0, 247));
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+form{
+    background-image: url("hi.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.lab{
+    margin-top: 250px;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+.button{
+    margin-top: 65px;
+    padding: 10px 25px;
+    font-size: x-large;
+    font-weight: bold;
+    color:white;
+    background-color: rgb(212, 0, 255);
+    border-radius: 10px;
+    border: none;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Cyber Attack Prediction</h1>
+    <form action="/predict" method="post" >
+        
+        <label for="url" class="lab">Enter URL:</label>
+        <input type="text" id="url" name="url" required class="lab"><br><br>
+        
+        <input type="submit" value="Submit" class="button">
+    </form>
+</body>
+</html>
